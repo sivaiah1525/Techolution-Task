@@ -1,0 +1,35 @@
+<div class="container mt-5">
+    <div class="row justify-content-end">
+        <div class="col-4">
+            <button type="button" (click)="gotocreatstudent()" class="btn btn-success w-100">ADD STUDENT</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3 style="text-align: center;">Techolution</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="Heading" colspan="5">Student Result Board</th>
+                      </tr>
+                  <tr>
+                    <th  class="subHeading" scope="col">Sno</th>
+                    <th class="subHeading" scope="col">Student Name</th>
+                    <th class="subHeading" scope="col">Roll Number</th>
+                    <th class="subHeading" scope="col">Total Marks</th>
+                    <th class="subHeading" scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let x of studentlist;let i=index" [ngClass]="{'fail':x.marks.total < 100 ,'topper':x.marks.total > 120}" >
+                    <th >{{i+1}}</th>
+                    <td >{{x.name}}</td>
+                    <td >{{x.rollNumber}}</td>
+                    <td >{{x.marks.total}}</td>
+                    <td >{{x.Status}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>

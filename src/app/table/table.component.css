@@ -1,0 +1,17 @@
+.fail{
+    color: red;
+}
+.topper{
+    color: rgba(46, 102, 46, 0.795);
+}
+.studentname{
+    font-size: 20px;
+}
+.Heading{
+    font:900;
+}
+.subHeading{
+    font: bold;
+    font-style: italic;
+
+}
