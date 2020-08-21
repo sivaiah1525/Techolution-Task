@@ -57,4 +57,10 @@ export class TableComponent implements OnInit {
     this.router.navigate(['addstudent']);
   }
 
+
+//   $(document).ready(function () {
+// $('#dtBasicExample').DataTable();
+// $('.dataTables_length').addClass('bs-select');
+// });
+
 }
